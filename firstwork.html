@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Case Study: Next-Gen SaaS Web App</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-nav {
+            background: rgba(16, 25, 34, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300">
+<nav class="fixed top-0 w-full z-50 glass-nav border-b border-white/5">
+<div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<a class="flex items-center gap-3" href="/">
+<div class="bg-primary p-1.5 rounded-lg">
+<svg class="size-6 text-white" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h1 class="text-xl font-black tracking-tighter uppercase">Portfolio</h1>
+</a>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Back to Work</a>
+<a class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all" href="#contact">Hire Me</a>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative w-full h-[70vh] md:h-[85vh] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('car.png');">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full">
+<div class="max-w-[1200px] mx-auto px-6 pb-16 md:pb-24">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Product</span>
+<h1 class="text-4xl md:text-7xl font-black leading-[1.1] tracking-tight mb-4">Car sales and Rental <br/>Web App</h1>
+<p class="text-xl text-slate-300 max-w-2xl leading-relaxed">Streamlining complex data workflows for high-growth tech enterprises through intuitive dashboard design.</p>
+</div>
+</div>
+</section>
+<section class="max-w-[1200px] mx-auto px-6 py-16 border-b border-white/5">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Role</p>
+<p class="text-lg font-medium">Developer</p>
+</div>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Timeline</p>
+<p class="text-lg font-medium">4 Months (2025)</p>
+</div>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Tools Used</p>
+<p class="text-lg font-medium">Django(webApp), Mysql, RESTAPI</p>
+</div>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Industry</p>
+<p class="text-lg font-medium">Tech</p>
+</div>
+</div>
+</section>
+<section class="max-w-[1200px] mx-auto px-6 py-24">
+<div class="max-w-3xl mx-auto space-y-24">
+<div>
+<h2 class="text-3xl font-black mb-8 flex items-center gap-3">
+<span class="text-primary">01.</span> The Challenge
+                </h2>
+<div class="space-y-6 text-lg text-slate-400 leading-relaxed">
+<p>Car dealerships and rental businesses were struggling to manage sales, rentals, bookings, and customer records using disconnected tools and manual processes.
+Most operations relied on spreadsheets, phone calls, and basic billing software, leading to data inconsistencies, double bookings, and delayed invoicing.
+
+Managing vehicle availability across sales and rental operations was error-prone, especially during peak demand.
+Staff had no single system to track vehicle status, customer history, booking timelines, and payment records in one place.
+</p>
+<p>The goal was to build a centralized web application that could:
+
+Handle both car sales and rentals in a unified workflow
+
+Prevent booking conflicts and data duplication
+
+Simplify invoice generation and record management
+
+Provide clear visibility into vehicles, customers, and transactions
+
+The system needed to be scalable, fast, and reliable, while remaining simple enough for non-technical staff to use daily..</p>
+</div>
+</div>
+<div class="relative -mx-6 md:-mx-24 group">
+<div class="absolute -inset-1 bg-primary/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative aspect-video bg-cover bg-center rounded-2xl border border-white/10" style="background-image: url('car.png');"></div>
+<p class="mt-4 text-center text-sm text-slate-500 italic">Landing Page of Car rental and Solutions</p>
+</div>
+<div>
+<h2 class="text-3xl font-black mb-8 flex items-center gap-3">
+<span class="text-primary">02.</span> The Solution
+                </h2>
+<div class="space-y-6 text-lg text-slate-400 leading-relaxed">
+<p>A centralized web application was designed and developed to manage car sales and rental operations through a single, unified system.
+The solution focused on simplifying daily operations while ensuring data accuracy, scalability, and ease of use for business staff.
+
+The application introduced structured workflows for both sales and rentals, allowing teams to track vehicle availability, customer details, bookings, and payments in real time.
+A clear separation of concerns in the backend ensured that business logic remained maintainable and extensible as requirements evolved.</p>
+<p>Booking & Sales Workflow
+Standardized workflows to handle rental bookings, sales records, and lifecycle tracking without data duplication or conflicts.
+Role-Based Access Control
+Secure access for admins and staff, ensuring sensitive operations and data were properly restricted.
+
+Scalable Backend Architecture
+Built using Django and REST APIs with a MySQL database to support future integrations and increased data volume.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 -mx-6 md:-mx-12">
+<div class="aspect-square bg-white/5 rounded-2xl border border-white/10 p-8 flex flex-col justify-end">
+<h4 class="text-xl font-bold mb-2">Modular System</h4>
+<p class="text-slate-400">Atomic design principles applied to every UI component for scalability.</p>
+</div>
+<div class="aspect-square bg-cover bg-center rounded-2xl border border-white/10" style="background-image: url('getimage.png');"></div>
+</div>
+<div class="bg-white/5 rounded-[2rem] p-10 md:p-16 border border-white/10">
+<h2 class="text-3xl font-black mb-12">Key Results</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div>
+<p class="text-5xl font-black text-primary mb-2">100%</p>
+<p class="text-slate-400">All sales, rentals, bookings, and invoices are now managed through a single system instead of multiple tools.</p>
+</div>
+<div>
+<p class="text-5xl font-black text-primary mb-2">0%</p>
+<p class="text-slate-400"><b>Booking conflicts</b></p>
+<p class="text-slate-400">Eliminated double bookings by introducing real-time vehicle availability tracking.</p>
+</div>
+<div>
+<p class="text-5xl font-black text-primary mb-2">Faster</p>
+<p class="text-slate-400"><b>Daily Operations</b></p>
+<p class="text-slate-400">Reduced manual data entry and invoice preparation time for staff through automated workflows.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="border-t border-white/5 py-24 group cursor-pointer hover:bg-white/[0.02] transition-colors">
+<a class="block max-w-[1200px] mx-auto px-6 text-center" href="sedcod.html">
+<span class="text-slate-500 font-bold uppercase tracking-widest text-sm mb-4 block">Next Project</span>
+<h3 class="text-4xl md:text-6xl font-black mb-8 group-hover:text-primary transition-colors">E-commerce Platform</h3>
+<span class="material-symbols-outlined text-5xl text-primary animate-bounce">arrow_downward</span>
+</a>
+</section>
+<section class="max-w-[1200px] mx-auto px-6 py-32" id="contact">
+<div class="bg-primary rounded-[2rem] p-12 md:p-24 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 p-24 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[300px]">mail</span>
+</div>
+<h2 class="text-4xl md:text-6xl font-black text-white mb-8 relative z-10">Start a Project</h2>
+<p class="text-white/80 text-lg md:text-xl mb-12 max-w-2xl mx-auto relative z-10">
+                Impressed with this case study? Let's discuss how I can bring similar impact to your product.
+            </p>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6 relative z-10">
+<a class="bg-white text-primary px-10 py-5 rounded-xl font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all" href="mailto:hello@example.com">
+                    hello@example.com
+                </a>
+</div>
+</div>
+</section>
+<footer class="border-t border-white/5 py-12">
+<div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="bg-primary/20 p-1.5 rounded-lg text-primary">
+<svg class="size-5" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="font-bold tracking-tight text-slate-400">PORTFOLIO © 2024</span>
+</div>
+<div class="flex gap-8 text-sm text-slate-500 dark:text-slate-400">
+<a class="hover:text-primary transition-colors" href="#">Dribbble</a>
+<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="#">Twitter</a>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">Handcrafted in Design City</p>
+</div>
+</footer>
+</main>
+
+</body></html>

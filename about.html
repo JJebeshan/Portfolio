@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Me | Professional Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation -->
+<div class="px-4 lg:px-40 flex justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-b-[#233648] px-4 py-3">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="hidden md:flex items-center gap-9">
+<a class="text-slate-600 dark:text-white text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-primary text-sm font-bold underline underline-offset-4" href="#">About</a>
+<a class="text-slate-600 dark:text-white text-sm font-medium hover:text-primary transition-colors" href="works.html">Projects</a>
+</div>
+<a href="mailto:jebeshan@gmail.com"><button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Hire Me</span>
+</button></a>
+</div>
+</header>
+</div>
+</div>
+<!-- Hero Section -->
+<div class="px-4 lg:px-40 flex justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="@container">
+<div class="flex flex-col gap-8 py-10 @[864px]:flex-row items-center">
+<div class="w-full @[864px]:w-1/2">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-2xl shadow-2xl border-4 border-white/10" data-alt="Professional portrait of Alex smiling in a studio" style='background-image: url("getimage.png");'></div>
+</div>
+<div class="flex flex-col gap-6 w-full @[864px]:w-1/2">
+<div class="flex flex-col gap-4">
+<h1 class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+                                        Building practical software.
+                                    </h1>
+<p class="text-slate-600 dark:text-slate-300 text-base leading-relaxed">
+                                        I’m a Software Developer with hands-on experience in building web applications, ERP modules, and data-driven systems.
+My focus is on writing clean backend logic, designing efficient databases, and delivering applications that actually work in real-world scenarios — not just demos.
+                                    </p>
+<p class="text-slate-600 dark:text-slate-300 text-base leading-relaxed">
+                                        I’ve worked across Django, SQL, Delphi, and REST APIs, building systems for car sales & rentals, e-commerce, media sharing, and analytics projects.
+I enjoy turning complex requirements into structured, maintainable solutions that businesses can rely on.
+                                    </p>
+</div>
+<div class="flex gap-4">
+<a href="Delphi_Developer.pdf" download><button class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-5 bg-primary text-white text-base font-bold transition-transform hover:scale-105">
+                                       <span class="material-symbols-outlined text-xl">
+      download
+    </span>  Python/Django CV
+                                    </button></a>
+                                    <a href="Python_role.pdf" download><button class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-5 bg-primary text-white text-base font-bold transition-transform hover:scale-105">
+                                         <span class="material-symbols-outlined text-xl">
+      download
+    </span> Delphi CV
+                                    </button></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section Header: Journey -->
+<div class="px-4 lg:px-40 flex justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex items-center gap-3 px-4 pb-3 pt-5">
+<span class="material-symbols-outlined text-primary text-3xl">work_history</span>
+<h2 class="text-slate-900 dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em]">Professional Journey</h2>
+</div>
+</div>
+</div>
+<!-- Timeline -->
+<div class="px-4 lg:px-40 flex justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="grid grid-cols-[40px_1fr] gap-x-4 px-4">
+<!-- Item 1 -->
+<div class="flex flex-col items-center gap-1 pt-3">
+<div class="bg-primary/20 p-1.5 rounded-full">
+<span class="material-symbols-outlined text-primary text-xl">integration_instructions</span>
+</div>
+<div class="w-[2px] bg-slate-300 dark:bg-[#324d67] h-10 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-slate-900 dark:text-white text-lg font-bold">Software Developer</p>
+<p class="text-primary text-sm font-semibold mb-2">2023 - Present</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed max-w-2xl">
+            Gained hands-on experience working with legacy systems and databases in a production environment
+                            </p>
+                            <li class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Developed applications using<b> Delphi </b>and <b>MSSQL</b></li>
+                            <li class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Worked on ERP-style business modules</li>
+                            <li class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Learned structured development practices and database optimization</li>
+                            <li class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Designed REST APIs and optimized SQL queries</li>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-slate-300 dark:bg-[#324d67] h-6"></div>
+<div class="bg-primary/20 p-1.5 rounded-full">
+<span class="material-symbols-outlined text-primary text-xl">co_present</span>
+</div>
+<div class="w-[2px] bg-slate-300 dark:bg-[#324d67] h-10 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-slate-900 dark:text-white text-lg font-bold">Teaching Faculty</p>
+<p class="text-primary text-sm font-semibold mb-2">2022 - 2023</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed max-w-2xl">
+                                Worked as a teaching faculty in the Data Science department, mentoring students on programming fundamentals, data handling, and practical problem-solving.
+                            </p>
+                            <li class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Taught Python, SQL, and data analysis concepts</li>
+                            <li class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Guided students through real-world mini projects</li>
+                            <li class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Focused on practical implementation over theory</li>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-slate-300 dark:bg-[#324d67] h-6"></div>
+<div class="bg-primary/20 p-1.5 rounded-full">
+<span class="material-symbols-outlined text-primary text-xl">rocket_launch</span>
+</div>
+<div class="w-[2px] bg-slate-300 dark:bg-[#324d67] h-10 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-slate-900 dark:text-white text-lg font-bold">Independent Projects</p>
+<p class="text-primary text-sm font-semibold mb-2">(While Working Full-Time)</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed max-w-2xl">
+                                Designed and developed full-stack applications using Django to strengthen backend and system design skills.
+                            </p>
+                            <li class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Car Sales & Rental Web App (ERP-style system)</li>
+                            <li class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Clothing E-commerce Platform</li>
+                            <li class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Media Sharing Platform (Local Network)</li>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col items-center gap-1 pb-3">
+<div class="w-[2px] bg-slate-300 dark:bg-[#324d67] h-6"></div>
+<div class="bg-primary/20 p-1.5 rounded-full">
+<span class="material-symbols-outlined text-primary text-xl">school</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-slate-900 dark:text-white text-lg font-bold">Masters in Computer Science</p>
+<p class="text-primary text-sm font-semibold mb-2">2023 - CGPA : 75 %  </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Skills & Tools -->
+<div class="px-4 lg:px-40 flex justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex items-center gap-3 px-4 pb-6 pt-10">
+<span class="material-symbols-outlined text-primary text-3xl">construction</span>
+<h2 class="text-slate-900 dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em]">Skills &amp; Tools</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+<div class="bg-slate-200/50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-300 dark:border-slate-700">
+<h3 class="text-slate-900 dark:text-white font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">dns</span> Backend & Application Development
+                            </h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">Delphi (Enterprise ERP Development)</span>
+<span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">REST API Development</span>
+<span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">Python (Django Framework)</span>
+<span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">Authentication & Authorization</span>
+</div>
+</div>
+<div class="bg-slate-200/50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-300 dark:border-slate-700">
+<h3 class="text-slate-900 dark:text-white font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">code</span> Frontend Development & Tools
+                            </h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">HTML/CSS</span>
+<span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">Tailwind</span>
+<span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">Git</span>
+<span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">Razorpay (Payment Integration)</span>
+</div>
+</div>
+<div class="bg-slate-200/50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-300 dark:border-slate-700">
+<h3 class="text-slate-900 dark:text-white font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">data_object</span> Database and Data Handling
+                            </h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">MSSQL (Production Systems)</span>
+<span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">Mysql</span>
+<span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">Relational Database Design</span>
+<span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">Query Optimization & Indexing</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="px-4 lg:px-40 flex justify-center py-16 mt-20 bg-slate-200 dark:bg-[#0c131a]">
+<div class="layout-content-container flex flex-col items-center max-w-[960px] flex-1 text-center">
+<h2 class="text-slate-900 dark:text-white text-3xl font-black mb-4">Let's work together.</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-8 max-w-md">
+                        Whether you have a specific project in mind or just want to chat about development, I'd love to hear from you.
+                    </p>
+<div class="flex gap-4">
+    <a href="mailto:jebeshan@gmail.com">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold">
+                            Say Hello
+                        </button></a>
+<div class="flex gap-2">
+
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-slate-300 dark:border-slate-800 w-full text-xs text-slate-500 uppercase tracking-widest">
+                        Jebeshan © 2026 . All rights reserved.
+                    </div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

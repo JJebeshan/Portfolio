@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Selected Work | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-solid border-slate-200 dark:border-[#233648] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4 lg:px-10">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">deployed_code</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-tight">Portfolio</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8 items-center">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-bold text-primary" href="">Work</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+</nav>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20" data-alt="User profile avatar portrait" style='background-image: url("getimage.png");'>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center">
+<div class="w-full max-w-[1200px] px-6 py-12 lg:px-10">
+<!-- Page Heading Section -->
+<div class="flex flex-col gap-4 mb-12">
+<p class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-slate-900 dark:text-white">
+                        Selected Work
+                    </p>
+<p class="text-slate-500 dark:text-[#92adc9] text-lg max-w-2xl font-normal leading-relaxed">
+                        A curated selection of real-world applications built to solve practical problems.
+                    </p>
+</div>
+<!-- Filters / Chips -->
+<div class="flex flex-wrap gap-3 mb-10">
+<button class="flex h-10 items-center justify-center rounded-lg bg-primary px-6 text-white text-sm font-semibold transition-all shadow-lg shadow-primary/20">
+                        All Projects
+                    </button>
+
+</div>
+<!-- Project Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+<!-- Card 1 -->
+<div class="group relative flex flex-col gap-4">
+<div class="overflow-hidden rounded-xl aspect-[16/10] bg-slate-100 dark:bg-[#1a2632] shadow-xl">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Modern SaaS dashboard with dark interface analytics" style='background-image: url("car.png");'>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+<span class="text-primary text-xs font-bold uppercase tracking-widest mb-2 bg-white/10 backdrop-blur-md w-fit px-3 py-1 rounded">Web App</span>
+<h3 class="text-white text-2xl font-bold">Car Sales & Renting ERP Module</h3>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-start px-1">
+<div>
+<h3 class="text-xl font-bold dark:text-white">Car Sales & Renting ERP Module</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Enterprise Resource Planning System</p>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors"><a href="firstwork.html">arrow_outward</a></span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative flex flex-col gap-4">
+<div class="overflow-hidden rounded-xl aspect-[16/10] bg-slate-100 dark:bg-[#1a2632] shadow-xl">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Luxury fashion e-commerce website design" style='background-image: url("clothing.png");'>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+<span class="text-primary text-xs font-bold uppercase tracking-widest mb-2 bg-white/10 backdrop-blur-md w-fit px-3 py-1 rounded">Web App</span>
+<h3 class="text-white text-2xl font-bold">Clothings – E-commerce Platform</h3>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-start px-1">
+<div>
+<h3 class="text-xl font-bold dark:text-white">E-commerce</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">High-end Fashion Retail</p>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">arrow_outward</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative flex flex-col gap-4">
+<div class="overflow-hidden rounded-xl aspect-[16/10] bg-slate-100 dark:bg-[#1a2632] shadow-xl">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Modern geometric brand identity presentation" style='background-image: url("ot.png");'>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+<span class="text-primary text-xs font-bold uppercase tracking-widest mb-2 bg-white/10 backdrop-blur-md w-fit px-3 py-1 rounded">Web App</span>
+<h3 class="text-white text-2xl font-bold">Media Sharing Platform (Local Server Based)</h3>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-start px-1">
+<div>
+<h3 class="text-xl font-bold dark:text-white">Media Sharing Platform (Local Server Based)</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Offline / Local Network Web App</p>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">arrow_outward</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative flex flex-col gap-4">
+<div class="overflow-hidden rounded-xl aspect-[16/10] bg-slate-100 dark:bg-[#1a2632] shadow-xl">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Fitness tracker mobile application screens" style='background-image: url("sql.jpg");'>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+<span class="text-primary text-xs font-bold uppercase tracking-widest mb-2 bg-white/10 backdrop-blur-md w-fit px-3 py-1 rounded">SQL</span>
+<h3 class="text-white text-2xl font-bold">Instagram Database Clone</h3>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-start px-1">
+<div>
+<h3 class="text-xl font-bold dark:text-white">Instagram Database Clone</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Database Design & Analysis Project</p>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Call to Action Section -->
+<div class="mt-24 mb-12 rounded-2xl bg-slate-100 dark:bg-[#1a2632] border border-slate-200 dark:border-[#233648] p-8 md:p-16 text-center overflow-hidden relative">
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="relative z-10 flex flex-col items-center gap-6">
+<h2 class="text-3xl md:text-5xl font-black dark:text-white max-w-2xl leading-tight">
+                            Have a vision you'd like to bring to life?
+                        </h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-xl">
+                           Open to new opportunities and collaborations. Let’s build something solid.
+                        </p>
+<div class="flex flex-wrap justify-center gap-4 mt-4">
+<a href="mailto:jebeshan@gmail.com"><button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-base font-bold tracking-wide shadow-lg shadow-primary/30 hover:translate-y-[-2px] transition-all">
+                                Get in Touch
+                            </button></a>
+<a href="about.html"><button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 border-2 border-slate-300 dark:border-[#233648] text-slate-700 dark:text-white text-base font-bold tracking-wide hover:bg-slate-200 dark:hover:bg-[#233648] transition-all">
+                                About me 
+                            </button></a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-solid border-slate-200 dark:border-[#233648] bg-background-light dark:bg-background-dark py-12">
+<div class="mx-auto max-w-[1200px] px-6 lg:px-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2 flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">deployed_code</span>
+<span class="text-xl font-bold dark:text-white">Portfolio.</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 max-w-sm leading-relaxed">
+                            Building reliable web applications with a focus on usability and performance.
+                        </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-200 dark:bg-[#233648] text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white transition-all" href="https://www.linkedin.com/in/jebeshan-j-2477b520b/">
+<span class="material-symbols-outlined text-xl">work</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-200 dark:bg-[#233648] text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white transition-all" href="https://github.com/JJebeshan">
+<span class="material-symbols-outlined text-xl">merge</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-200 dark:bg-[#233648] text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white transition-all" href="mailto:jebeshan@gmail.com">
+<span class="material-symbols-outlined text-xl">mail</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white">Navigation</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="index.html">Home</a></li>
+<li><a class="text-primary font-medium" href="#">Work</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="about.html">About</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white">Connect</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="https://www.linkedin.com/in/jebeshan-j-2477b520b/">LinkedIn</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-slate-200 dark:border-[#233648] flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-sm text-slate-500 dark:text-slate-400">Jebeshan © 2026 Portfolio . All rights reserved.</p>
+<div class="flex gap-8">
+
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

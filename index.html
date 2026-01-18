@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bold Dark Portfolio Landing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-nav {
+            background: rgba(16, 25, 34, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav border-b border-white/5">
+<div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-1.5 rounded-lg">
+<svg class="size-6 text-white" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h1 class="text-xl font-black tracking-tighter uppercase">Portfolio</h1>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#work">Work</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+<a class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all" href="#contact">Hire Me</a>
+</div>
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<main class="pt-20">
+<section class="max-w-[1200px] mx-auto px-6 py-20 md:py-32">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="order-2 lg:order-1">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Available for Freelance/onsite and abroad oppourtunites</span>
+<h1 class="text-5xl md:text-7xl font-black leading-[1.1] tracking-tight mb-8">
+                        Building Scalable  <br/><span class="text-primary">Web Applications </span> </h1>
+<p class="text-lg md:text-xl text-slate-500 dark:text-slate-400 mb-10 max-w-lg leading-relaxed">
+                        I’m a software developer focused on building reliable, user-centric web applications.
+With hands-on experience in full-stack development, databases, and real-world projects, I turn ideas into functional, maintainable, and production-ready solutions.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a href="works.html"><button class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl text-base font-bold transition-all flex items-center gap-2">
+                            View Projects <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</button>
+<a href="mailto:jebeshan@gmail.com"><button class="bg-slate-200 dark:bg-white/10 hover:bg-slate-300 dark:hover:bg-white/20 text-slate-900 dark:text-white px-8 py-4 rounded-xl text-base font-bold transition-all">
+                            Let's Talk
+                        </button></a>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/20 rounded-3xl blur-2xl group-hover:bg-primary/30 transition-all duration-500"></div>
+<div class="relative aspect-square w-full bg-cover bg-center rounded-3xl border border-white/10" data-alt="Professional portrait of a male designer looking forward" style="background-image: url('./getimage.png');">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Works -->
+<section class="max-w-[1200px] mx-auto px-6 py-20" id="work">
+<div class="flex items-end justify-between mb-12">
+<div>
+<h2 class="text-3xl md:text-4xl font-black tracking-tight mb-4">Selected Works</h2>
+<p class="text-slate-500 dark:text-slate-400">A collection of recent projects from various industries.</p>
+</div>
+<a class="hidden md:flex items-center gap-2 text-primary font-bold hover:underline" href="works.html">
+                    All Projects <span class="material-symbols-outlined">north_east</span>
+</a>
+</div>
+<div class="grid grid-cols-1 gap-12">
+<!-- Large Cinematic Card 1 -->
+<div class="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="h-[400px] md:h-[500px] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Clean minimal SaaS dashboard interface mockup" style="background-image: url('ot.png');">
+</div>
+<div class="p-8 md:p-12 flex flex-col justify-center">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-4 block">Media Sharinf</span>
+<h3 class="text-3xl font-bold mb-4">Media Sharing</h3>
+<p class="text-slate-500 dark:text-slate-400 text-lg mb-8 leading-relaxed">
+                                A lightweight media-sharing platform that enables users on the same local network to upload, share, and stream videos without relying on the internet
+                            </p>
+<div class="flex gap-4">
+<button class="bg-primary text-white px-6 py-3 rounded-lg font-bold flex items-center gap-2 transition-transform active:scale-95">
+                                    View Case Study <a href="third.html"><span class="material-symbols-outlined text-sm">open_in_new</span></a>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Large Cinematic Card 2 -->
+<div class="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="lg:order-2 h-[400px] md:h-[500px] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Brand identity guidelines with modern typography" style="background-image: url('car.png');">
+</div>
+<div class="lg:order-1 p-8 md:p-12 flex flex-col justify-center">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-4 block">Product Engineering</span>
+<h3 class="text-3xl font-bold mb-4">ERP Module – Car Sales & Renting System</h3>
+<p class="text-slate-500 dark:text-slate-400 text-lg mb-8 leading-relaxed">
+                                An end-to-end ERP module to manage car sales, rentals, bookings, and invoices.
+                                Designed to handle real business workflows with accuracy and efficiency.
+                            </p>
+<div class="flex gap-4">
+<button class="bg-primary text-white px-6 py-3 rounded-lg font-bold flex items-center gap-2 transition-transform active:scale-95">
+                                    View Case Study <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="bg-slate-100 dark:bg-white/[0.02] py-24" id="services">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-black mb-4">Core Services</h2>
+<p class="text-slate-500 dark:text-slate-400 max-w-xl mx-auto">I build software with a strong focus on performance, scalability, and maintainability.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-10 rounded-2xl bg-white dark:bg-background-dark border border-slate-200 dark:border-white/5 hover:border-primary transition-all group">
+<div class="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">dns</span>
+</div>
+<h4 class="text-xl font-bold mb-4">Backend Development</h4>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">Designing robust server-side logic, APIs, and database structures that scale with business needs.</p>
+<p>Tech: Python (Django), SQL, REST APIs</p>
+</div>
+<div class="p-10 rounded-2xl bg-white dark:bg-background-dark border border-slate-200 dark:border-white/5 hover:border-primary transition-all group">
+<div class="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">web</span>
+</div>
+<h4 class="text-xl font-bold mb-4">Frontend Development</h4>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">Defining your brand's voice, mission, and visual identity to stand out in crowded markets.</p>
+<p>Tech: HTML, CSS, JavaScript, Tailwind, Bootstrap</p>
+</div>
+<div class="p-10 rounded-2xl bg-white dark:bg-background-dark border border-slate-200 dark:border-white/5 hover:border-primary transition-all group">
+<div class="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">schema</span>
+</div>
+<h4 class="text-xl font-bold mb-4">Database & Systems</h4>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">Building responsive, lightning-fast websites using modern frameworks and best practices.</p>
+<p>Tech: PostgreSQL, MySQL, SQLite, MSSQL</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-[1200px] mx-auto px-6 py-32" id="contact">
+<div class="bg-primary rounded-[2rem] p-12 md:p-24 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 p-24 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[300px]">mail</span>
+</div>
+<h2 class="text-4xl md:text-6xl font-black text-white mb-8 relative z-10">Start a Project</h2>
+<p class="text-white/80 text-lg md:text-xl mb-12 max-w-2xl mx-auto relative z-10">
+                                        Ready to take your digital presence to the next level? Let's collaborate on something extraordinary.
+                </p>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6 relative z-10">
+<a class="bg-white text-primary px-10 py-5 rounded-xl font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all" href="mailto:jebeshan@gmail.com">
+                        jebeshan@gmail.com
+                    </a>
+<div class="flex gap-4">
+<a class="size-12 rounded-full border border-white/30 flex items-center justify-center text-white hover:bg-white hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">link</span>
+</a>
+<a class="size-12 rounded-full border border-white/30 flex items-center justify-center text-white hover:bg-white hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="border-t border-white/5 py-12">
+<div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="bg-primary/20 p-1.5 rounded-lg text-primary">
+<svg class="size-5" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="font-bold tracking-tight">JEBESHAN © 2026</span>
+</div>
+<div class="flex gap-8 text-sm text-slate-500 dark:text-slate-400">
+<a class="hover:text-primary transition-colors" href="https://github.com/JJebeshan">Github</a>
+<a class="hover:text-primary transition-colors" href="https://www.linkedin.com/in/jebeshan-j-2477b520b/">LinkedIn</a>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">Built with logic, clarity, and purpose.</p>
+</div>
+</footer>
+</main>
+</body>
+</html>
