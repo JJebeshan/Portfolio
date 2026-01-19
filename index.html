@@ -66,15 +66,34 @@
 </div>
 </nav>
 <div id="mobileMenu"
-     class="fixed top-20 left-0 w-full bg-black/90 backdrop-blur-lg hidden flex-col items-center gap-6 py-6 md:hidden z-40">
-  <a href="#work" class="text-sm font-medium">Work</a>
-  <a href="#services" class="text-sm font-medium">Services</a>
-  <a href="about.html" class="text-sm font-medium">About</a>
-  <a href="mailto:jebeshan@gmail.com"
-     class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold">
-     Hire Me
-  </a>
+  class="fixed top-20 left-0 w-full bg-black/95 backdrop-blur-lg
+         hidden md:hidden z-40">
+
+  <ul class="flex flex-col divide-y divide-white/10">
+    <li>
+      <a href="#work" class="block px-6 py-4 text-sm font-medium hover:bg-white/5">
+        Work
+      </a>
+    </li>
+    <li>
+      <a href="#services" class="block px-6 py-4 text-sm font-medium hover:bg-white/5">
+        Services
+      </a>
+    </li>
+    <li>
+      <a href="about.html" class="block px-6 py-4 text-sm font-medium hover:bg-white/5">
+        About
+      </a>
+    </li>
+    <li class="px-6 py-5">
+      <a href="mailto:jebeshan@gmail.com"
+         class="block text-center bg-primary text-white py-3 rounded-lg font-bold">
+        Hire Me
+      </a>
+    </li>
+  </ul>
 </div>
+
 
 <!-- Hero Section -->
 <main class="pt-20">
@@ -247,4 +266,11 @@ With hands-on experience in full-stack development, databases, and real-world pr
   menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
   });
+
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+    });
+  });
 </script>
+
