@@ -58,13 +58,24 @@
 <a class="text-sm font-medium hover:text-primary transition-colors" href="#work">Work</a>
 <a class="text-sm font-medium hover:text-primary transition-colors" href="#services">Services</a>
 <a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
-<a class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all" href="#contact">Hire Me</a>
+<a class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all" href="mailto:jebeshan@gmail.com">Hire Me</a>
 </div>
-<button class="md:hidden text-white">
+<button id="menuBtn" class="md:hidden text-white">
 <span class="material-symbols-outlined">menu</span>
 </button>
 </div>
 </nav>
+<div id="mobileMenu"
+     class="fixed top-20 left-0 w-full bg-black/90 backdrop-blur-lg hidden flex-col items-center gap-6 py-6 md:hidden z-40">
+  <a href="#work" class="text-sm font-medium">Work</a>
+  <a href="#services" class="text-sm font-medium">Services</a>
+  <a href="about.html" class="text-sm font-medium">About</a>
+  <a href="mailto:jebeshan@gmail.com"
+     class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold">
+     Hire Me
+  </a>
+</div>
+
 <!-- Hero Section -->
 <main class="pt-20">
 <section class="max-w-[1200px] mx-auto px-6 py-20 md:py-32">
@@ -229,3 +240,11 @@ With hands-on experience in full-stack development, databases, and real-world pr
 </main>
 </body>
 </html>
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
